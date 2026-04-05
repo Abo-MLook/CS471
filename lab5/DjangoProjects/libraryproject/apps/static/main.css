@@ -1,0 +1,63 @@
+#link1, #link2, #link3 {
+    padding: 20px;
+    text-align: center;
+}
+
+#link1 {
+    background-color: lightgreen;
+}
+
+#link2 {
+    background-color: #555;
+}
+
+#link3 {
+    background-color: black;
+}
+
+#link1 a {
+    color: red;
+    display: block;
+}
+
+#link2 a {
+    color: gold;
+    display: block;
+}
+
+#link3 a {
+    color: white;
+    display: block;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: green;
+}
+
+.format-title {
+    color: green;
+    background-color: beige;
+    padding: 10px;
+}
+
+.listing-title {
+    color: white;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.center-table {
+    margin: auto;
+}

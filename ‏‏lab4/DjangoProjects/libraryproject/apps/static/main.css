@@ -1,0 +1,136 @@
+/* main.css - Simple styling for links and layout */
+
+/* Container with ID */
+#links-container {
+    padding: 30px;
+    background-color: #ffff;
+    display: block;
+    text-align: center;
+    color: #333;
+}
+
+.section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    width: 80%;
+    max-width: 600px;
+}
+
+
+
+h1 {
+    color: #0ee53c;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(193, 232, 75);
+    text-align: left;
+}
+
+/* Link styling - Normal state */
+.link {
+    padding: 10px 15px;
+    color: blue;
+    background-color: #e6f2ff;
+    text-decoration: none;
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+    width: 200px;
+}
+
+/* Link - Visited state */
+.link:visited {
+    color: #c80bee;
+}
+
+/* Link - Hover state */
+.link:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* Link - Active state */
+.link:active {
+    color: #003d99;
+
+}
+
+/* Tables Wrapper */
+.tables-wrapper {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Table Title */
+.table-title {
+    margin-bottom: 10px;
+}
+
+/* Fruit Table */
+.fruit-table {
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.fruit-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fruit-table td {
+    text-align: center;
+    padding: 8px;
+}
+
+/* Camel Table */
+.camel-table {
+    margin: 0 auto;
+}
+
+.camel-table th {
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.camel-table td {
+    text-align: center;
+    border: 1px solid #000;
+}
+
+/* Table Header */
+.table-header {
+    text-align: center;
+    border: 1px solid #000;
+}
+
+/* Table Subtitle */
+.table-subtitle {
+    margin-bottom: 20px;
+}
+
+/* Image Cell */
+.image-cell {
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.image-cell img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+/* Table Label */
+.table-label {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* Animal Name */
+.animal-name {
+    font-weight: bold;
+}

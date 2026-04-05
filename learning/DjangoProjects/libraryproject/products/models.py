@@ -1,3 +1,5 @@
+from datetime import datetime
+from django.utils import timezone
 from django.db import models
 
 # Create your models here.
@@ -6,27 +8,27 @@ from django.db import models
 class Product(models.Model):
     name = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=5, decimal_places=2)
-    content = models.TextField(null=True,blank=True, verbose_name='explantion') # all about null , blank and verbose name
+    # all about null , blank and verbose name
+    content = models.TextField(
+        null=True, blank=True, verbose_name='explantion')
     image = models.ImageField(upload_to='photos/%y/%m/%d')
     active = models.BooleanField(default=True)
-    
+
     catgs = [
-        ('CS','CS'),
-        ('IT','IT')
+        ('CS', 'CS'),
+        ('IT', 'IT')
     ]
-    category = models.CharField(null=True,blank=True,choices=catgs)
+    category = models.CharField(null=True, blank=True, choices=catgs)
+
     def __str__(self):
         return self.name
-    
+
     class Meta:
         verbose_name = 'Teacher'
-        ordering = ['-price'] #- decending
-        
-        
-from datetime import datetime  
-from django.utils import timezone
+        ordering = ['-price']  # - decending
+
 
 class History(models.Model):
     date = models.DateField()
     time = models.TimeField(null=True)
-    history = models.DateTimeField(default = timezone.now)
+    history = models.DateTimeField(default=timezone.now)
