@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    {% load static %}
+  <link rel="stylesheet" href="{% static "css/base_style.css" %}">
+<head>
+    <title>My Website</title>
+
+
+
+</head>
+
+<body>
+
+    {% include "parts/navbar.html" %}
+
+    <div style="padding: 20px;">
+        {% block content %}{% endblock %}
+    </div>
+
+    {% include "parts/footer.html" %}
+
+</body>
+</html>

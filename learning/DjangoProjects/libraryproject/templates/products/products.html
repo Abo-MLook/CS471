@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for x in ps  %}
+<h1>{{x.name}}</h1>
+<p> {{x.content}}</p>
+<p> {{x.price}}$</p>
+{% endfor %}
+
+{% endblock content %}
